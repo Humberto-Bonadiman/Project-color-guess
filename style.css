@@ -24,3 +24,15 @@ body {
   height: 80px;
   display: inline-block;
 }
+
+#reset-game {
+  background-color: silver;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#reset-game:hover {
+  cursor: pointer;
+}

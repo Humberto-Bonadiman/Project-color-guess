@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,15 @@
   <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
   <title>Project Color Guess</title>
 </head>
+
 <body>
   <header>
     <h1 id="title">Advinhe a Cor!</h1>
   </header>
   <main>
-    <p id="rgb-color">(168, 34, 1)</p>
-    <div id="container-balls">
+    <p id="rgb-color"></p>
+    <p id="points"> </p>
+    <div id="all-balls">
       <div class="ball"></div>
       <div class="ball"></div>
       <div class="ball"></div>
@@ -21,7 +24,10 @@
       <div class="ball"></div>
       <div class="ball"></div>
     </div>
+    <p id="answer">Escolha uma cor</p>
+    <button type="button" id="reset-game">Iniciar jogo!</button>
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
