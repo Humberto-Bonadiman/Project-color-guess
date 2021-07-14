@@ -16,6 +16,11 @@ body {
   margin-top: 50px;
 }
 
+.points {
+  margin-top: 5px;
+  display: inline-block;
+}
+
 .ball {
   border: 1px solid black;
   border-radius: 50%;

@@ -4,7 +4,10 @@ const start = document.querySelector('#reset-game');
 const paragraphStart = document.querySelector('#answer');
 const points = document.querySelector('#points');
 const correct = document.querySelector('.correct');
-const allBalls = document.querySelector('#all-balls')
+const allBalls = document.querySelector('#all-balls');
+var score = document.querySelector('#score');
+const rightAnswer = 3;
+var correctAnswer = 0;
 
 function getRandomColor() {
   let color = 'rgb';
@@ -29,6 +32,8 @@ function selectBall(ball) {
   let right = document.querySelector('.correct').style.backgroundColor;
   if (ball.target.style.backgroundColor === right) {
     let answer = document.querySelector('#answer').innerText = 'Acertou!';
+    correctAnswer += rightAnswer;
+    score.innerText = correctAnswer;
     console.log(ball.target.style.backgroundColor);
     console.log(right);
   } else {
