@@ -11,9 +11,10 @@ function getRandomColor() {
   const parentheses1 = '(';
   const parentheses2 = ')';
   const commaSpace = ', ';
-  color += parentheses1 + (Math.floor(Math.random() * 255) + 1) + commaSpace + 
-  (Math.floor(Math.random() * 255) + 1) + commaSpace + 
-  (Math.floor(Math.random() * 255) + 1) + parentheses2;
+  color += parentheses1 + (Math.floor(Math.random() * 255) + 1) 
+  + commaSpace + (Math.floor(Math.random() * 255) + 1) 
+  + commaSpace + (Math.floor(Math.random() * 255) + 1) 
+  + parentheses2;
   return color;
 }
 
@@ -35,7 +36,7 @@ function selectBall(ball) {
   if (ball.target.style.backgroundColor === right) {
     document.querySelector('#answer').innerText = 'Acertou!';
     correctAnswer += 3;
-    const placar = 'Placar: '
+    const placar = 'Placar: ';
     score.innerText = placar + correctAnswer;
     console.log(ball.target.style.backgroundColor);
     console.log(right);
