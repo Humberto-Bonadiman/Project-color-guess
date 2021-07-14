@@ -8,18 +8,22 @@ let correctAnswer = 0;
 
 function getRandomColor() {
   let color = 'rgb';
-  color += '('+(Math.floor(Math.random() * 255) + 1)+', '+(Math.floor(Math.random() * 255) + 1)+', '+
-  (Math.floor(Math.random() * 255) + 1)+')';
+  const parentheses1 = '(';
+  const parentheses2 = ')';
+  const commaSpace = ', ';
+  color += parentheses1 + (Math.floor(Math.random() * 255) + 1) + commaSpace + 
+  (Math.floor(Math.random() * 255) + 1) + commaSpace + 
+  (Math.floor(Math.random() * 255) + 1) + parentheses2;
   return color;
 }
 
 function changeBallsColor() {
   for (let index = 0; index < ball.length; index += 1) {
-    let ballIndex = ball[index];
+    const ballIndex = ball[index];
     ballIndex.style.backgroundColor = getRandomColor();
   }
-  let number = Math.floor(Math.random() * 6);
-  let rightBall = ball[number];
+  const number = Math.floor(Math.random() * 6);
+  const rightBall = ball[number];
   rightBall.classList.add('correct');
   question.innerText = rightBall.style.backgroundColor;
 }
@@ -31,7 +35,8 @@ function selectBall(ball) {
   if (ball.target.style.backgroundColor === right) {
     document.querySelector('#answer').innerText = 'Acertou!';
     correctAnswer += 3;
-    score.innerText = 'Placar: '+correctAnswer;
+    const placar = 'Placar: '
+    score.innerText = placar + correctAnswer;
     console.log(ball.target.style.backgroundColor);
     console.log(right);
   } else {
