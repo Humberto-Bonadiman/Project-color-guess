@@ -8,18 +8,18 @@ let correctAnswer = 0;
 
 function getRandomColor() {
   let color = 'rgb';
-  color += '(' + (Math.floor(Math.random() * 255) + 1) + ', ' 
-  + (Math.floor(Math.random() * 255) + 1) + ', ' + (Math.floor(Math.random() * 255) + 1) + ')';
+  color += '('+(Math.floor(Math.random() * 255) + 1)+', '+(Math.floor(Math.random() * 255) + 1)+', '+
+  (Math.floor(Math.random() * 255) + 1)+')';
   return color;
 }
 
 function changeBallsColor() {
   for (let index = 0; index < ball.length; index += 1) {
-    var ballIndex = ball[index];
+    let ballIndex = ball[index];
     ballIndex.style.backgroundColor = getRandomColor();
   }
-  var number = Math.floor(Math.random() * 6);
-  var rightBall = ball[number];
+  let number = Math.floor(Math.random() * 6);
+  let rightBall = ball[number];
   rightBall.classList.add('correct');
   question.innerText = rightBall.style.backgroundColor;
 }
@@ -27,15 +27,15 @@ changeBallsColor();
 
 // fonte (com minhas modificações): https://github.com/tryber/sd-014-b-project-color-guess/pull/17/commits/5a856847b408d1b9d684980f64ed0a1ff0dfddbd
 function selectBall(ball) {
-  let right = document.querySelector('.correct').style.backgroundColor;
+  const right = document.querySelector('.correct').style.backgroundColor;
   if (ball.target.style.backgroundColor === right) {
-    let answer = document.querySelector('#answer').innerText = 'Acertou!';
+    document.querySelector('#answer').innerText = 'Acertou!';
     correctAnswer += 3;
-    score.innerText = 'Placar: ' + correctAnswer;
+    score.innerText = 'Placar: '+correctAnswer;
     console.log(ball.target.style.backgroundColor);
     console.log(right);
   } else {
-    let answer = document.querySelector('#answer').innerText = 'Errou! Tente novamente!';
+    document.querySelector('#answer').innerText = 'Errou! Tente novamente!';
     console.log(ball.target.style.backgroundColor);
     console.log(right);
   }
@@ -43,8 +43,8 @@ function selectBall(ball) {
 
 allBalls.addEventListener('click', selectBall);
 
-function gameStart(){
-  paragraphStart.innerText = "Escolha uma cor";
+function gameStart() {
+  paragraphStart.innerText = 'Escolha uma cor';
   changeBallsColor();
 }
 
