@@ -9,16 +9,20 @@
 body {
   margin: auto;
   text-align: center;
-  background-color: rgb(123, 122, 220);
+  background-image: url('Images/background5.jpg');
+  color: white;
+}
+
+#title {
+  margin-top: 10px;
 }
 
 #rgb-color {
   margin-top: 50px;
 }
 
-.points {
+#score {
   margin-top: 5px;
-  display: inline-block;
 }
 
 .ball {
@@ -31,7 +35,8 @@ body {
 }
 
 #reset-game {
-  background-color: silver;
+  background-color: rgb(19, 17, 17);
+  color: white;
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
@@ -40,4 +45,17 @@ body {
 
 #reset-game:hover {
   cursor: pointer;
+  color:rgb(123, 122, 220)
+}
+
+@media screen and (max-width: 600px) {
+  .ball {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #rgb-color {
+    margin-top: 20px;
+  }
 }
