@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  background-image: url('Images/background1.jpg');
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#title {
+  margin-top: 10px;
+}
+
+#rgb-color {
+  margin-top: 50px;
+}
+
+#score {
+  margin-top: 5px;
+}
+
+.ball {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-top: 80px;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+
+#reset-game {
+  background-color: rgb(19, 17, 17);
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#reset-game:hover {
+  cursor: pointer;
+  color:rgb(123, 122, 220)
+}
+
+@media screen and (max-width: 600px) {
+  .ball {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #rgb-color {
+    margin-top: 20px;
+  }
+}
