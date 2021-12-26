@@ -1,14 +1,12 @@
 # Boas vindas ao repositório do projeto Color Guess!
 
 ## Descrição do Projeto
-Neste projeto eu desenvolvi uma apliacação onde é possível jogar um jogo de adivinhação de cores conforme o sistema de cores **RGB** (Red, Green, Blue) com atualização da pontuação de acordo com os acertos.
-
-Será desenvolvida uma aplicação utilizando JavaScript, HTML5 e CSS3.
+Neste projeto eu desenvolvi uma apliacação onde é possível jogar um jogo de adivinhação de cores, conforme o sistema de cores **RGB** (Red, Green, Blue), com atualização da pontuação de acordo com os acertos.
 
 ---
 
 ## Tecnologias utilizadas
-Para desenvolver a página foi utilizado **HTML5**, na estilização foi realizada com **CSS3** e alǵoica de funcionamento do jogo foi feita com JavaScript.
+Para desenvolver a página foi utilizado **HTML5**, a estilização foi realizada com **CSS3** e a lógica de funcionamento do jogo foi feita com JavaScript.
 
 ---
 
